@@ -1,0 +1,27 @@
+{
+  "name": "test_package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "scripts": {
+    "start": "ts-node app.ts",
+    "watch": "nodemon --inspect -e ts -w . -x npm run watch-serve",
+    "watch-serve": "nodemon app",
+    "test": "node './test/index.d.ts'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^4.7.2",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.10.3",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "socket.io-client": "^4.7.2",
+    "ts-node": "^10.9.1"
+  }
+}
